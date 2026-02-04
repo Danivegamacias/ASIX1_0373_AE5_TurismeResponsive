@@ -4,154 +4,190 @@
     <meta charset="UTF-8">
     <title>Descubre Varsovia</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
-    <!-- CSS externo -->
+    <!-- Ícono de la pestaña -->
+    <link rel="icon" type="image/png" href="img/polonia.png">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Bootstrap SOLO para el bloque extra -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </head>
 
 <body>
-
-<!-- BOTÓN FLOTANTE -->
+<!-- Encabezado-->
+<header class="encabezado-principal">
+    <h1>VARSOVIA</h1>
+    <p>CAPITAL DE POLONIA</p>
+</header>
+<!-- Botón -->
 <a href="https://go2warsaw.pl" target="_blank" class="boton-flotante">
-    <img src="img/bandera-polonia.png" alt="Turismo Varsovia">
+    <img src="img/polonia.png" alt="Turismo Varsovia">
 </a>
 
 <div class="layout">
 
-    <!-- MENÚ -->
+    <!-- Menú -->
     <nav class="menu">
-        <h1>Varsovia</h1>
         <ul>
             <li><a href="#galeria">Galería</a></li>
             <li><a href="#lugares">Lugares</a></li>
             <li><a href="#mapa">Mapa</a></li>
-            <li><a href="#extra">Experiencias</a></li>
+            <li><a href="#extra">Carrousel</a></li>
         </ul>
     </nav>
 
-    <!-- CONTENIDO -->
+    <!-- Contenido -->
     <main class="contenido">
 
-        <!-- GALERÍA -->
+        <!-- Galeria -->
         <section id="galeria" class="bloque">
             <h2>Galería de Varsovia</h2>
             <hr class="linea-roja">
 
             <div class="grid-galeria">
-                <img src="img/vista-panoramica-varsovia-polonia.jpg" alt="">
-                <img src="img/img2.jpg" alt="">
-                <img src="img/img2.jpg" alt="">
-                <img src="img/img2.jpg" alt="">
-                <img src="img/img2.jpg" alt="">
-                <img src="img/img2.jpg" alt="">
+                <img src="img/img1.jpg" alt="imgen número 1">
+                <img src="img/img2.jpg" alt="imgen número 2">
+                <img src="img/img3.jpg" alt="imgen número 3">
+                <img src="img/img4.jpg" alt="imgen número 4">
+                <img src="img/img5.jpg" alt="imgen número 5">
+                <img src="img/img6.jpg" alt="imgen número 6">
             </div>
         </section>
 
-        <!-- LUGARES -->
+        <br>
+
+        <!-- lugares -->
         <section id="lugares" class="bloque">
             <h2>Lugares de interés</h2>
             <hr class="linea-roja">
-
             <div class="grid-lugares">
-
                 <article class="ficha">
-                    <img src="img/lugares/castillo.jpg" alt="">
+                    <img src="img/castillo.jpg" alt="imagen castillo">
                     <h3>Castillo Real</h3>
-                    <p>Residencia histórica de los reyes de Polonia.</p>
+                    <p>Residencia de los reyes polacos y el lugar donde se firmó la primera constitución de Europa en 1791.</p>
                     <span>📍 Plaza Zamkowy</span>
                 </article>
 
                 <article class="ficha">
-                    <img src="img/lugares/palacio.jpg" alt="">
+                    <img src="img/palacio.jpg" alt="imagen palacio">
                     <h3>Palacio de la Cultura</h3>
-                    <p>Edificio más emblemático de la ciudad.</p>
-                    <span>📍 Centro</span>
+                    <p>El edificio más divisible de la ciudad, fue un "regalo" de la Unión Soviética a Polonia en los años 50.</p>
+                    <span>📍 Plaza Defilad</span>
                 </article>
 
                 <article class="ficha">
-                    <img src="img/lugares/museo.jpg" alt="">
+                    <img src="img/museo.jpg" alt="imagen museo">
                     <h3>Museo del Alzamiento</h3>
-                    <p>Memoria histórica de Varsovia.</p>
+                    <p>Museo donde se muestra cuando la resistencia polaca intentó liberar a la ciudad de la ocupación alemana.</p>
                     <span>📍 Wola</span>
                 </article>
 
                 <article class="ficha">
-                    <img src="img/lugares/parque.jpg" alt="">
+                    <img src="img/parque.jpg" alt="imagen parque">
                     <h3>Parque Łazienki</h3>
                     <p>El parque más famoso de la ciudad.</p>
                     <span>📍 Distrito Sur</span>
                 </article>
-
             </div>
         </section>
+
+        <br>
 
         <!-- MAPA -->
         <section id="mapa" class="bloque">
             <h2>Mapa de Varsovia</h2>
             <hr class="linea-roja">
-            <img src="img/mapa-varsovia.png" alt="Mapa de Varsovia" class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.98228271276!2d20.896613431747067!3d52.2328870943528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2zVmFyc8OydmlhLCBQb2zDsm5pYQ!5e0!3m2!1sca!2ses!4v1770122430547!5m2!1sca!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
 
-        <!-- EXPERIENCIAS -->
+        <br>
+        
+        <!-- Carrousel -->
         <section id="extra" class="bloque">
-            <h2>Experiencias únicas</h2>
+            <h2>Carrousel</h2>
             <hr class="linea-roja">
-
-            <div class="alert alert-danger">
-                Disfruta de conciertos de Chopin, rutas históricas y gastronomía tradicional polaca.
-            </div>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/img1.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img2.jpg" class="d-block w-100" alt=>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img3.jpg" class="d-block w-100">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/img4.jpg" class="d-block w-100">
+                        </div>
+                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
         </section>
 
     </main>
 
     <!-- NOTICIAS -->
-    <aside class="noticias">
-
+    <div class="noticias">  
         <article class="noticia">
-            <img src="img/noticias/n1.jpg" alt="">
-            <h4>Festival cultural</h4>
-            <p>Varsovia celebra su festival anual...</p>
-            <a href="https://www.warsawtour.pl" target="_blank">Leer más</a>
+            <img src="img/noticia1.jpg" alt="flor cadáver">
+            <h4>Conoce la 'flor cadáver'</h4>
+            <p class="texto-noticia">
+                <span class="texto-corto">La flor cadáver...</span>
+                <span class="texto-completo">La flor cadáver es una planta que florece en el verano y se caracteriza por su aroma desagradable, que simula el olor de una carne podrida. Esta planta atrae a insectos polinizadores que se alimentan de ella.</span>
+            </p>
+            <a href="https://www.antena3.com/noticias/mundo/conoce-flor-cadaver-planta-que-conquistado-visitantes-jardin-botanico-varsovia_20250808689617068180495aa513ef3b.html" class="leer-mas">Leer más</a>
         </article>
 
         <article class="noticia">
-            <img src="img/noticias/n2.jpg" alt="">
-            <h4>Noche de museos</h4>
-            <p>Acceso gratuito hasta la madrugada...</p>
-            <a href="https://www.warsawtour.pl" target="_blank">Leer más</a>
+            <img src="img/noticia2.jpg" alt="hombre escalando edificio">
+            <h4>Un hombre logra escalar un edificio...</h4>
+            <p class="texto-noticia">
+                <span class="texto-corto">Un hombre logra escalar un edificio más rápido que un ascensor...</span>
+                <span class="texto-completo">Un campeón mundial de escalada ha tardado 12,12 segundos en ascender los 23 metros de un edificio de Varsovia. Un trayecto en el que ha competido contra un ascensor y en el que el deportista polaco ha sido más rápido que la máquina.</span>
+            </p>
+            <a href="https://www.antena3.com/noticias/mundo/un-hombre-logra-escalar-un-edificio-mas-rapido-que-un-ascensor_201909065d7204d30cf2845c13b5abc3.html" class="leer-mas">Leer más</a>
         </article>
 
         <article class="noticia">
-            <img src="img/noticias/n3.jpg" alt="">
-            <h4>Maratón</h4>
-            <p>Evento deportivo anual...</p>
-            <a href="https://www.warsawtour.pl" target="_blank">Leer más</a>
+            <img src="img/noticia3.jpg" alt="pitón">
+            <h4>Una pitón siembra pánico en Varsovia</h4>
+            <p class="texto-noticia">
+                <span class="texto-corto">Pitón de 6 metros...</span>
+                <span class="texto-completo">Los expertos creen, según los restos que ha dejado el animal al mudar la piel, que podría medir más de seis metros. La buscan en una zona cercana a un río porque el lugar cumple las condiciones que esta especie necesita: un lugar húmedo, pacífico y silencioso.</span>
+            </p>
+            <a href="https://www.antena3.com/noticias/mundo/las-autoridades-polacas-buscan-a-una-piton-gigante-al-sur-de-varsovia_201807125b46f0600cf23010240ce89b.html" class="leer-mas">Leer más</a>
         </article>
 
         <article class="noticia">
-            <img src="img/noticias/n4.jpg" alt="">
-            <h4>Mercado navideño</h4>
-            <p>Tradición e iluminación...</p>
-            <a href="https://www.warsawtour.pl" target="_blank">Leer más</a>
+            <img src="img/noticia4.jpg" alt="Trump en Varsovia">
+            <h4>Trump se pregunta en Varsovia</h4>
+            <p class="texto-noticia">
+                <span class="texto-corto">Trump se pregunta en Varsovia si...</span>
+                <span class="texto-completo">El presidente de EEUU, Donald Trump, cree que la "cuestión fundamental de nuestro tiempo es si Occidente tiene la voluntad de sobrevivir" frente a las "amenazas" de "dentro y fuera" contra sus "valores, cultura, fe y tradición".</span>
+            </p>
+            <a href="https://www.antena3.com/noticias/mundo/mercado-navideño-varsovia-tradicion-iluminacion_202412015e0c8c7f0cf2845c13b5abc3.html" class="leer-mas">Leer más</a>
         </article>
 
         <article class="noticia">
-            <img src="img/noticias/n5.jpg" alt="">
-            <h4>Concierto Chopin</h4>
-            <p>Música clásica al aire libre...</p>
-            <a href="https://www.warsawtour.pl" target="_blank">Leer más</a>
+            <img src="img/noticia5.jpg" alt="dron">
+            <h4>Polonia intercepta un dron</h4>
+            <p class="texto-noticia">
+                <span class="texto-corto">Polonia asegura haber interceptado un dron sobre edificios gubernamentales en Varsovia...</span>
+                <span class="texto-completo">El Servicio de Protección del Estado de Polonia ha neutralizado un dron que sobrevolaba las inmediaciones de instalaciones sensibles del Gobierno en la calle Parkowa y el propio palacio presidencial Belweder.</span>
+            </p>
+            <a href="https://elpais.com/internacional/2025-09-15/polonia-asegura-haber-interceptado-un-dron-sobre-edificios-gubernamentales-en-varsovia.html" class="leer-mas">Leer más</a>
         </article>
-
-    </aside>
-
+    </div>
 </div>
 
 </body>

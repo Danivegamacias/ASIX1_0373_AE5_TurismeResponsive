@@ -22,13 +22,13 @@
     <p>CAPITAL DE POLONIA</p>
 </header>
 <!-- Botón -->
-<a href="https://go2warsaw.pl" target="_blank" class="boton-flotante">
+<a href="https://go2warsaw.pl" class="boton-flotante">
     <img src="img/polonia.png" alt="Turismo Varsovia">
 </a>
 
 <div class="layout">
 
-    <!-- Menú -->
+    <!-- Menú con botones -->
     <nav class="menu">
         <ul>
             <li><a href="#galeria">Galería</a></li>
@@ -38,7 +38,7 @@
         </ul>
     </nav>
 
-    <!-- Contenido -->
+    <!-- Contenido de la galeria -->
     <main class="contenido">
 
         <!-- Galeria -->
@@ -58,32 +58,33 @@
 
         <br>
 
-        <!-- lugares -->
+        <!-- Lugares para visitar -->
         <section id="lugares" class="bloque">
             <h2>Lugares de interés</h2>
             <hr class="linea-roja">
             <div class="grid-lugares">
+                <!-- Lugar 1 - Palacio -->
                 <article class="ficha">
                     <img src="img/castillo.jpg" alt="imagen castillo">
                     <h3>Castillo Real</h3>
                     <p>Residencia de los reyes polacos y el lugar donde se firmó la primera constitución de Europa en 1791.</p>
                     <span>📍 Plaza Zamkowy</span>
                 </article>
-
+                <!-- Lugar 2 - Palacio -->
                 <article class="ficha">
                     <img src="img/palacio.jpg" alt="imagen palacio">
                     <h3>Palacio de la Cultura</h3>
                     <p>El edificio más divisible de la ciudad, fue un "regalo" de la Unión Soviética a Polonia en los años 50.</p>
                     <span>📍 Plaza Defilad</span>
                 </article>
-
+                <!-- Lugar 3 - Museo del Alzamiento -->
                 <article class="ficha">
                     <img src="img/museo.jpg" alt="imagen museo">
                     <h3>Museo del Alzamiento</h3>
                     <p>Museo donde se muestra cuando la resistencia polaca intentó liberar a la ciudad de la ocupación alemana.</p>
                     <span>📍 Wola</span>
                 </article>
-
+                <!-- Lugar 4 - Parque Łazienki -->
                 <article class="ficha">
                     <img src="img/parque.jpg" alt="imagen parque">
                     <h3>Parque Łazienki</h3>
@@ -95,7 +96,7 @@
 
         <br>
 
-        <!-- MAPA -->
+        <!-- Mapa de Varsovia -->
         <section id="mapa" class="bloque">
             <h2>Mapa de Varsovia</h2>
             <hr class="linea-roja">
@@ -136,56 +137,62 @@
 
     </main>
 
-    <!-- NOTICIAS -->
+    <!-- Noticias -->
     <div class="noticias">  
+        <!-- Noticia 1 -->
         <article class="noticia">
             <img src="img/noticia1.jpg" alt="flor cadáver">
             <h4>Conoce la 'flor cadáver'</h4>
-            <p class="texto-noticia">
-                <span class="texto-corto">La flor cadáver...</span>
+            <input type="checkbox" id="noticia1" class="toggle-noticia">
+            <label for="noticia1" class="texto-noticia">
+                <span class="texto-corto">La flor cadáver<span class="puntos-suspensivos">...</span></span>
                 <span class="texto-completo">La flor cadáver es una planta que florece en el verano y se caracteriza por su aroma desagradable, que simula el olor de una carne podrida. Esta planta atrae a insectos polinizadores que se alimentan de ella.</span>
-            </p>
-            <a href="https://www.antena3.com/noticias/mundo/conoce-flor-cadaver-planta-que-conquistado-visitantes-jardin-botanico-varsovia_20250808689617068180495aa513ef3b.html" class="leer-mas">Leer más</a>
+            </label>
+            <a href="https://www.antena3.com/noticias/mundo/conoce-flor-cadaver-planta-que-conquistado-visitantes-jardin-botanico-varsovia_20250808689617068180495aa513ef3b.html" class="leer-mas" target="_blank">Leer más</a>
         </article>
-
+        <!-- Noticia 2 -->
         <article class="noticia">
             <img src="img/noticia2.jpg" alt="hombre escalando edificio">
             <h4>Un hombre logra escalar un edificio...</h4>
-            <p class="texto-noticia">
-                <span class="texto-corto">Un hombre logra escalar un edificio más rápido que un ascensor...</span>
+            <input type="checkbox" id="noticia2" class="toggle-noticia">
+            <label for="noticia2" class="texto-noticia">
+                <span class="texto-corto">Un hombre logra escalar un edificio más rápido que un ascensor<span class="puntos-suspensivos">...</span></span>
                 <span class="texto-completo">Un campeón mundial de escalada ha tardado 12,12 segundos en ascender los 23 metros de un edificio de Varsovia. Un trayecto en el que ha competido contra un ascensor y en el que el deportista polaco ha sido más rápido que la máquina.</span>
-            </p>
-            <a href="https://www.antena3.com/noticias/mundo/un-hombre-logra-escalar-un-edificio-mas-rapido-que-un-ascensor_201909065d7204d30cf2845c13b5abc3.html" class="leer-mas">Leer más</a>
+            </label>
+            <a href="https://www.antena3.com/noticias/mundo/un-hombre-logra-escalar-un-edificio-mas-rapido-que-un-ascensor_201909065d7204d30cf2845c13b5abc3.html" class="leer-mas" target="_blank">Leer más</a>
         </article>
-
+        <!-- Noticia 3 -->
         <article class="noticia">
             <img src="img/noticia3.jpg" alt="pitón">
             <h4>Una pitón siembra pánico en Varsovia</h4>
-            <p class="texto-noticia">
-                <span class="texto-corto">Pitón de 6 metros...</span>
+            <input type="checkbox" id="noticia3" class="toggle-noticia">
+            <label for="noticia3" class="texto-noticia">
+                <span class="texto-corto">Pitón de 6 metros<span class="puntos-suspensivos">...</span></span>
                 <span class="texto-completo">Los expertos creen, según los restos que ha dejado el animal al mudar la piel, que podría medir más de seis metros. La buscan en una zona cercana a un río porque el lugar cumple las condiciones que esta especie necesita: un lugar húmedo, pacífico y silencioso.</span>
-            </p>
-            <a href="https://www.antena3.com/noticias/mundo/las-autoridades-polacas-buscan-a-una-piton-gigante-al-sur-de-varsovia_201807125b46f0600cf23010240ce89b.html" class="leer-mas">Leer más</a>
+            </label>
+            <a href="https://www.antena3.com/noticias/mundo/las-autoridades-polacas-buscan-a-una-piton-gigante-al-sur-de-varsovia_201807125b46f0600cf23010240ce89b.html" class="leer-mas" target="_blank">Leer más</a>
         </article>
-
+        <!-- Noticia 4 -->
         <article class="noticia">
             <img src="img/noticia4.jpg" alt="Trump en Varsovia">
             <h4>Trump se pregunta en Varsovia</h4>
-            <p class="texto-noticia">
-                <span class="texto-corto">Trump se pregunta en Varsovia si...</span>
+            <input type="checkbox" id="noticia4" class="toggle-noticia">
+            <label for="noticia4" class="texto-noticia">
+                <span class="texto-corto">Trump se pregunta en Varsovia si<span class="puntos-suspensivos">...</span></span>
                 <span class="texto-completo">El presidente de EEUU, Donald Trump, cree que la "cuestión fundamental de nuestro tiempo es si Occidente tiene la voluntad de sobrevivir" frente a las "amenazas" de "dentro y fuera" contra sus "valores, cultura, fe y tradición".</span>
-            </p>
-            <a href="https://www.antena3.com/noticias/mundo/mercado-navideño-varsovia-tradicion-iluminacion_202412015e0c8c7f0cf2845c13b5abc3.html" class="leer-mas">Leer más</a>
+            </label>
+            <a href="https://www.antena3.com/noticias/mundo/mercado-navideño-varsovia-tradicion-iluminacion_202412015e0c8c7f0cf2845c13b5abc3.html" class="leer-mas" target="_blank">Leer más</a>
         </article>
-
+        <!-- Noticia 5 -->
         <article class="noticia">
             <img src="img/noticia5.jpg" alt="dron">
             <h4>Polonia intercepta un dron</h4>
-            <p class="texto-noticia">
-                <span class="texto-corto">Polonia asegura haber interceptado un dron sobre edificios gubernamentales en Varsovia...</span>
+            <input type="checkbox" id="noticia5" class="toggle-noticia">
+            <label for="noticia5" class="texto-noticia">
+                <span class="texto-corto">Polonia asegura haber interceptado un dron sobre edificios gubernamentales en Varsovia<span class="puntos-suspensivos">...</span></span>
                 <span class="texto-completo">El Servicio de Protección del Estado de Polonia ha neutralizado un dron que sobrevolaba las inmediaciones de instalaciones sensibles del Gobierno en la calle Parkowa y el propio palacio presidencial Belweder.</span>
-            </p>
-            <a href="https://elpais.com/internacional/2025-09-15/polonia-asegura-haber-interceptado-un-dron-sobre-edificios-gubernamentales-en-varsovia.html" class="leer-mas">Leer más</a>
+            </label>
+            <a href="https://elpais.com/internacional/2025-09-15/polonia-asegura-haber-interceptado-un-dron-sobre-edificios-gubernamentales-en-varsovia.html" class="leer-mas" target="_blank">Leer más</a>
         </article>
     </div>
 </div>
